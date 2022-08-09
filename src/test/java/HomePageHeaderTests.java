@@ -12,14 +12,14 @@ public class HomePageHeaderTests extends BaseTest{
     }
 
     @Test
-    public void test4() {
+    public void test11() {
         String actual = homePage.getScooterLink();
         String expected = "https://qa-scooter.praktikum-services.ru/";
         assertEquals(expected, actual);
     }
 
     @Test
-    public void test5() {
+    public void test12() {
         String actual = homePage.getYandexLink();
         String expected = "https://yandex.ru/";
         assertEquals(expected, actual);

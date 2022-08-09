@@ -9,14 +9,14 @@ public class OrderPageTests extends BaseTest{
     OrderPageScooter orderPage = new OrderPageScooter(driver);
 
     @Test
-    public void test2() {
+    public void test9() {
         String actual = orderPage.positiveTesting1();
         String expected = "Заказ оформлен";
         assertEquals(expected, actual);
     }
 
     @Test
-    public void test3() {
+    public void test10() {
         WebElement element = driver.findElement(orderPage.getOrderButtonOnBot());
         ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();", element);
 

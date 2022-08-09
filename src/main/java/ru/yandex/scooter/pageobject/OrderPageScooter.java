@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 
 public class OrderPageScooter {
     private WebDriver driver;
-//    Нужно написать тесты с разными данными: минимум два набора.
     //1 сценарий. Кнопка заказа сверху
     //Кнопка "Заказать" наверху
     private final By orderButtonOnTop = By.className("Button_Button__ra12g");
@@ -63,6 +62,7 @@ public class OrderPageScooter {
     public void clickOrderButtonOnTop() {
         driver.findElement(orderButtonOnTop).click();
     }
+
     public void clickOrderButtonOnBot() {
         driver.findElement(orderButtonOnBot).click();
     }
@@ -70,6 +70,7 @@ public class OrderPageScooter {
     public void setName1() {
         driver.findElement(nameField).sendKeys("Дмитрий");
     }
+
     public void setName2() {
         driver.findElement(nameField).sendKeys("Шакира");
     }
@@ -77,6 +78,7 @@ public class OrderPageScooter {
     public void setSurname1() {
         driver.findElement(surnameField).sendKeys("Ким");
     }
+
     public void setSurname2() {
         driver.findElement(surnameField).sendKeys("Риполь");
     }
@@ -84,6 +86,7 @@ public class OrderPageScooter {
     public void setAddress1() {
         driver.findElement(addressField).sendKeys("Пр Мира 195");
     }
+
     public void setAddress2() {
         driver.findElement(addressField).sendKeys("Ленина 312");
     }
@@ -92,6 +95,7 @@ public class OrderPageScooter {
         driver.findElement(metroStationField).click();
         driver.findElement(sokolnikiMetroStation).click();
     }
+
     public void setMetroStation2() {
         driver.findElement(metroStationField).click();
         driver.findElement(cherkizovskayaMetroStation).click();
@@ -100,6 +104,7 @@ public class OrderPageScooter {
     public void setPhoneNumber1() {
         driver.findElement(phoneNumberField).sendKeys("89991232323");
     }
+
     public void setPhoneNumber2() {
         driver.findElement(phoneNumberField).sendKeys("89999878787");
     }
@@ -112,6 +117,7 @@ public class OrderPageScooter {
         driver.findElement(deliveryDateField).click();
         driver.findElement(deliveryDatePopoverCurrentDayOfTheMonthButton).click();
     }
+
     public void selectingTheFirstDayOfNextMonth() {
         driver.findElement(deliveryDateField).click();
         driver.findElement(deliveryDatePopoverNextMonthButton).click();
@@ -122,6 +128,7 @@ public class OrderPageScooter {
         driver.findElement(rentalPeriod).click();
         driver.findElement(rentalPeriodIs1Day).click();
     }
+
     public void set2DaysRentalPeriod() {
         driver.findElement(rentalPeriod).click();
         driver.findElement(rentalPeriodIs2Days).click();
@@ -130,6 +137,7 @@ public class OrderPageScooter {
     public void selectingBlackScooter() {
         driver.findElement(blackScooter).click();
     }
+
     public void selectingGreyScooter() {
         driver.findElement(greyScooter).click();
     }
@@ -137,6 +145,7 @@ public class OrderPageScooter {
     public void commentForCourier1() {
         driver.findElement(commentForCourier).sendKeys("Позвонить по приезду");
     }
+
     public void commentForCourier2() {
         driver.findElement(commentForCourier).sendKeys("Оставьте ближе к подъезду");
     }
@@ -171,6 +180,7 @@ public class OrderPageScooter {
         clickConfirmationButton();
         return getConfirmationText();
     }
+
     //Позитивный сценарий №2
     public String positiveTesting2() {
         clickOrderButtonOnBot();
