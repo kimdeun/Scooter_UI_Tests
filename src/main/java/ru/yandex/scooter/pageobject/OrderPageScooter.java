@@ -9,8 +9,6 @@ public class OrderPageScooter {
     //Кнопка "Заказать" наверху
     private final By orderButtonOnTop = By.className("Button_Button__ra12g");
     //Кнопка "Заказать" внизу
-//    private final By orderButtonOnBot = By.className("Button_Button__ra12g Button_UltraBig__UU3Lp");
-//    private final By orderButtonOnBot = By.xpath(".//button[@class='Button_Button__ra12g Button_UltraBig__UU3Lp']");
     private final By orderButtonOnBot = By.cssSelector(".Button_Button__ra12g.Button_Middle__1CSJM");
 
     //Поле "Имя"
